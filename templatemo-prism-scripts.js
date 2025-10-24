@@ -1,42 +1,33 @@
 // JavaScript Document
 
-/*
-
-TemplateMo 600 Prism Flux
-
-https://templatemo.com/tm-600-prism-flux
-
-*/
-
-
 // Portfolio data for carousel
 
         const portfolioData = [
             {
                 id: 1,
-                title: 'Neural Network',
-                description: 'Advanced AI system with deep learning capabilities for predictive analytics and pattern recognition.',
+                title: 'Labeling Tool',
+                description: 'Python-based GUI for video annotation and metadata addition for ML datasets.',
                 image: 'images/neural-network.jpg',
                 tech: ['TensorFlow', 'Python', 'CUDA']
             },
             {
                 id: 2,
-                title: 'Quantum Cloud',
-                description: 'Next-generation cloud infrastructure leveraging quantum computing for unprecedented processing power.',
+                title: 'Data Augmentation',
+                description: 'Automated transformations to improve quality and diversity of ML training datasets.',
                 image: 'images/quantum-cloud.jpg',
                 tech: ['AWS', 'Kubernetes', 'Docker']
             },
             {
                 id: 3,
-                title: 'Blockchain Vault',
-                description: 'Secure decentralized storage solution using advanced encryption and distributed ledger technology.',
+                title: 'Drone Footage Processor',
+                description: 'Custom Python utility for loading, displaying, and annotating drone video data.',
                 image: 'images/blockchain-vault.jpg',
                 tech: ['Ethereum', 'Solidity', 'Web3']
             },
             {
                 id: 4,
-                title: 'Cyber Defense',
-                description: 'Military-grade cybersecurity framework with real-time threat detection and automated response.',
+                title: 'Workout Analyser',
+                description: 'Professonal workout analyser tool with valuable insights.',
                 image: 'images/cyber-defense.jpg',
                 tech: ['Zero Trust', 'AI Defense', 'Encryption']
             },
