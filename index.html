@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRISM FLUX - Jonatan's Portfolio</title>
+    <title>Jonatan | Business Informatics Portfolio</title>
     <link rel="stylesheet" href="templatemo-prism-flux.css">
 </head>
 <body>
@@ -29,16 +29,17 @@
                     </div>
                 </div>
                 <span class="logo-text">
-                    <span class="prism">PRISM</span>
-                    <span class="flux">FLUX</span>
+                    <span class="prism">Jonatan</span>
+                    <span class="flux">Portfolio</span>
                 </span>
             </a>
             
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#stats" class="nav-link">Metrics</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             
@@ -53,11 +54,25 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="carousel-container">
-            <div class="hero-content">
-                <h1>Hi! I'm Jonatan</h1>
-                <p>I'm a Business Informatics graduate with 4 years of internship experience at Bosch. I specialize in Python development, data pipelines, automation, and transforming technology into business value.</p>
-                <a href="#about" class="cta-button">Learn More About Me</a>
+            <div class="carousel" id="carousel">
+                <div class="carousel-item">
+                    <div class="hero-content">
+                        <h1>Hi! I'm Jonatan</h1>
+                        <p>Recent Business Informatics graduate passionate about Python, data engineering, and creating efficient data pipelines. I specialize in automation, data processing, and transforming technology into business value.</p>
+                        <a href="#about" class="cta-button">Learn More About Me</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/templatemo-futuristic-girl.jpg" alt="Jonatan Portfolio">
+                    </div>
+                </div>
             </div>
+            
+            <div class="carousel-controls">
+                <button class="carousel-btn" id="prevBtn">‹</button>
+                <button class="carousel-btn" id="nextBtn">›</button>
+            </div>
+            
+            <div class="carousel-indicators" id="indicators"></div>
         </div>
     </section>
 
@@ -65,42 +80,27 @@
     <section class="philosophy-section" id="about">
         <div class="philosophy-container">
             <div class="prism-line"></div>
-            
-            <h2 class="philosophy-headline">
-                Turning Data Into Value
-            </h2>
-            
+            <h2 class="philosophy-headline">Turning Code Into Business Value</h2>
             <p class="philosophy-subheading">
-                I am a motivated and versatile Business Informatics professional from Óbuda University, experienced in software tool development, Python programming, data pipelines, and automation. I am passionate about transforming technological solutions into real business impact.
+                I am a motivated and versatile Business Informatics professional with 4 years of internship experience at Bosch. Passionate about Python development, data processing workflows, and automation.
             </p>
-            
             <div class="philosophy-pillars">
                 <div class="pillar">
                     <div class="pillar-icon">💻</div>
                     <h3 class="pillar-title">Python Development</h3>
-                    <p class="pillar-description">
-                        Advanced Python programming for automation, data processing, and internal tools at Bosch.
-                    </p>
+                    <p class="pillar-description">Building reliable software tools, data pipelines, and automation scripts for internal processes and machine learning preparation.</p>
                 </div>
-                
                 <div class="pillar">
                     <div class="pillar-icon">⚡</div>
                     <h3 class="pillar-title">Data Engineering</h3>
-                    <p class="pillar-description">
-                        Designing efficient ETL workflows, data cleaning, and transformation for real-world applications.
-                    </p>
+                    <p class="pillar-description">ETL workflows, data cleaning, transformation, and optimization to transform technology into actionable business insights.</p>
                 </div>
-                
                 <div class="pillar">
-                    <div class="pillar-icon">🚀</div>
-                    <h3 class="pillar-title">Automation & Tools</h3>
-                    <p class="pillar-description">
-                        Creating GUI utilities, scripts, and workflows to streamline processes and increase productivity.
-                    </p>
+                    <div class="pillar-icon">🛠️</div>
+                    <h3 class="pillar-title">Tooling & Automation</h3>
+                    <p class="pillar-description">GUI development, unit testing, and automated data annotation tools to enhance team efficiency and reliability.</p>
                 </div>
             </div>
-            
-            <div class="philosophy-particles" id="particles"></div>
         </div>
     </section>
 
@@ -108,62 +108,32 @@
     <section class="stats-section" id="stats">
         <div class="section-header">
             <h2 class="section-title">Performance Metrics</h2>
-            <p class="section-subtitle">Real achievements from my professional experience</p>
+            <p class="section-subtitle">Real-world impact and achievements</p>
         </div>
-        
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-icon">🚀</div>
                 <div class="stat-number" data-target="4">0</div>
                 <div class="stat-label">Years Experience</div>
-                <p class="stat-description">4 years of internship experience at Bosch working on software tools and data pipelines.</p>
+                <p class="stat-description">Worked on multiple innovative projects, including internal Bosch tools and data pipelines.</p>
             </div>
-            
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <div class="stat-number" data-target="150">0</div>
+                <div class="stat-label">Datasets Processed</div>
+                <p class="stat-description">Handled large-scale data annotation and preprocessing tasks for ML model training.</p>
+            </div>
             <div class="stat-card">
                 <div class="stat-icon">💻</div>
                 <div class="stat-number" data-target="10">0</div>
-                <div class="stat-label">Projects</div>
-                <p class="stat-description">Delivered multiple internal software tools and data processing solutions using Python.</p>
+                <div class="stat-label">Internal Tools</div>
+                <p class="stat-description">Developed Python-based GUI tools and automation scripts for internal teams.</p>
             </div>
-            
             <div class="stat-card">
-                <div class="stat-icon">⚡</div>
-                <div class="stat-number" data-target="100">0</div>
-                <div class="stat-label">Automation Tasks</div>
-                <p class="stat-description">Implemented scripts and pipelines to optimize workflows and save time for the team.</p>
-            </div>
-            
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number" data-target="50">0</div>
-                <div class="stat-label">Data Sets Processed</div>
-                <p class="stat-description">Prepared and cleaned numerous datasets for machine learning and analysis projects.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects-section" id="projects">
-        <div class="section-header">
-            <h2 class="section-title">Projects</h2>
-            <p>Some of my Python and data engineering projects from Bosch and personal work</p>
-        </div>
-        
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon">💻</div>
-                <h3>Drone Footage Annotation Tool</h3>
-                <p>Python GUI for labeling drone videos, data augmentation, and unit tests. Technologies: Python, OpenCV, PyQt, Pandas.</p>
-            </div>
-            <div class="project-card">
-                <div class="project-icon">⚡</div>
-                <h3>Data Pipeline Automation</h3>
-                <p>Automated workflows for data cleaning and ML dataset preparation. Technologies: Python, Pandas, SQL, Bash.</p>
-            </div>
-            <div class="project-card">
-                <div class="project-icon">🚀</div>
-                <h3>Internal Software Tools</h3>
-                <p>Python-based utilities for metadata management and video processing. Technologies: Python, Docker, GUI development.</p>
+                <div class="stat-icon">🧪</div>
+                <div class="stat-number" data-target="20">0</div>
+                <div class="stat-label">Python Scripts</div>
+                <p class="stat-description">Unit-tested, reliable scripts for data augmentation, cleaning, and processing workflows.</p>
             </div>
         </div>
     </section>
@@ -172,33 +142,49 @@
     <section class="skills-section" id="skills">
         <div class="skills-container">
             <div class="section-header">
-                <h2 class="section-title">Technical Arsenal</h2>
-                <p class="section-subtitle">Mastery of cutting-edge technologies and frameworks</p>
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I master</p>
             </div>
-            
-            <div class="skill-categories">
-                <div class="category-tab active" data-category="all">All Skills</div>
-                <div class="category-tab" data-category="frontend">Frontend</div>
-                <div class="category-tab" data-category="backend">Backend</div>
-                <div class="category-tab" data-category="cloud">Cloud & DevOps</div>
-                <div class="category-tab" data-category="emerging">Emerging Tech</div>
-            </div>
-
             <div class="skills-hexagon-grid" id="skillsGrid">
-                <div class="skill-item" data-category="backend">Python</div>
-                <div class="skill-item" data-category="backend">SQL</div>
-                <div class="skill-item" data-category="backend">Bash</div>
-                <div class="skill-item" data-category="backend">C#</div>
-                <div class="skill-item" data-category="frontend">HTML</div>
-                <div class="skill-item" data-category="frontend">CSS</div>
-                <div class="skill-item" data-category="tools">Git</div>
-                <div class="skill-item" data-category="tools">Docker</div>
-                <div class="skill-item" data-category="tools">Azure</div>
-                <div class="skill-item" data-category="data">Pandas</div>
-                <div class="skill-item" data-category="data">Numpy</div>
-                <div class="skill-item" data-category="data">Matplotlib</div>
-                <div class="skill-item" data-category="data">Seaborn</div>
-                <div class="skill-item" data-category="data">ETL</div>
+                <div class="skill-hexagon" data-category="backend">Python 🐍</div>
+                <div class="skill-hexagon" data-category="backend">SQL 🗄️</div>
+                <div class="skill-hexagon" data-category="backend">Pandas 📊</div>
+                <div class="skill-hexagon" data-category="backend">NumPy 🔢</div>
+                <div class="skill-hexagon" data-category="frontend">HTML 🌐</div>
+                <div class="skill-hexagon" data-category="frontend">CSS 🎨</div>
+                <div class="skill-hexagon" data-category="frontend">JavaScript ⚡</div>
+                <div class="skill-hexagon" data-category="cloud">Docker 🐳</div>
+                <div class="skill-hexagon" data-category="cloud">Azure ☁️</div>
+                <div class="skill-hexagon" data-category="testing">Pytest ✅</div>
+                <div class="skill-hexagon" data-category="testing">UnitTest 🧪</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="section-header">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">A showcase of my work and contributions</p>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+            <div class="project-card">
+                <div class="project-icon">🛠️</div>
+                <h3>Internal Labeling Tool</h3>
+                <p>Python-based GUI for video annotation and metadata addition for ML datasets.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">⚡</div>
+                <h3>Data Augmentation Script</h3>
+                <p>Automated transformations to improve quality and diversity of ML training datasets.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">💻</div>
+                <h3>Drone Footage Processor</h3>
+                <p>Custom Python utility for loading, displaying, and annotating drone video data.</p>
+                <a href="#" target="_blank">View Project</a>
             </div>
         </div>
     </section>
@@ -206,20 +192,11 @@
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="section-header">
-            <h2 class="section-title">Get In Touch</h2>
-            <p>Ready to transform your vision into reality? Let's connect.</p>
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">Let's connect and discuss new opportunities</p>
         </div>
-        
         <div class="contact-container">
             <div class="contact-info">
-                <a href="https://maps.google.com/?q=Budapest" target="_blank" class="info-item">
-                    <div class="info-icon">📍</div>
-                    <div class="info-text">
-                        <h4>Location</h4>
-                        <p>Budapest, Hungary</p>
-                    </div>
-                </a>
-                
                 <a href="mailto:jonatan@example.com" class="info-item">
                     <div class="info-icon">📧</div>
                     <div class="info-text">
@@ -227,37 +204,31 @@
                         <p>jonatan@example.com</p>
                     </div>
                 </a>
-                
-                <a href="tel:+36201234567" class="info-item">
+                <a href="tel:+36301234567" class="info-item">
                     <div class="info-icon">📱</div>
                     <div class="info-text">
                         <h4>Phone</h4>
-                        <p>+36 20 123 4567</p>
+                        <p>+36 30 123 4567</p>
                     </div>
                 </a>
             </div>
-            
             <form class="contact-form" id="contactForm">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
                 </div>
-                
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                
                 <div class="form-group">
                     <label for="subject">Subject</label>
                     <input type="text" id="subject" name="subject" required>
                 </div>
-                
                 <div class="form-group">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
-                
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
         </div>
@@ -268,31 +239,21 @@
         <div class="footer-content">
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <div class="logo-icon">
-                        <div class="logo-prism">
-                            <div class="prism-shape"></div>
-                        </div>
+                    <div class="logo-prism">
+                        <div class="prism-shape"></div>
                     </div>
-                    <span class="logo-text">
-                        <span class="prism">PRISM</span>
-                        <span class="flux">FLUX</span>
-                    </span>
+                    <span class="logo-text">Jonatan Portfolio</span>
                 </div>
                 <p class="footer-description">
-                    Turning complex challenges into brilliant solutions through the convergence of technology, data, and design.
+                    Turning complex challenges into elegant solutions through code and data.
                 </p>
             </div>
         </div>
-        
         <div class="footer-bottom">
-            <div class="copyright">
-                © 2026 Jonatan. All rights reserved.
-            </div>
-            <div class="footer-credits">
-                Designed by <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a>
-            </div>
+            <div class="copyright">© 2025 Jonatan. All rights reserved.</div>
         </div>
     </footer>
+
 <script src="templatemo-prism-scripts.js"></script>
 </body>
 </html>
