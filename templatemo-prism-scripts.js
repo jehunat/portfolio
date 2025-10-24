@@ -28,7 +28,7 @@
                 id: 4,
                 title: 'Workout Analyser',
                 description: 'Professonal workout analyser tool with valuable insights.',
-                image: 'images/cyber-defense.jpg',
+                image: 'images/workout.png',
                 tech: ['Zero Trust', 'AI Defense', 'Encryption']
             },
             {
