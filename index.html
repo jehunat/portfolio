@@ -1,37 +1,239 @@
-<!-- PROJECTS / PORTFOLIO PAGE -->
-<div id="projects" class="page">
-    <div class="container">
-        <div class="content-wrapper">
-            <section class="projects-grid">
-                <h2>My Projects</h2>
-                <p>Here are some of the projects I've worked on, showcasing Python development, data engineering, and automation skills.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Data Engineer Portfolio</title>
+    <link rel="stylesheet" href="templatemo-glossy-touch.css">
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
 
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <h3>Data Pipeline Automation</h3>
-                        <p>Python scripts for automated ETL workflows and data transformation.</p>
+    <!-- NAVIGATION -->
+    <header>
+        <div class="container">
+            <nav class="glass">
+                <div class="logo" onclick="showPage('home')">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="5" opacity="0.9"/>
+                            <circle cx="32" cy="16" r="4" opacity="0.8"/>
+                            <circle cx="16" cy="32" r="4" opacity="0.7"/>
+                            <circle cx="32" cy="32" r="5" opacity="0.85"/>
+                            <circle cx="24" cy="8" r="2" opacity="1"/>
+                            <circle cx="8" cy="24" r="2" opacity="0.9"/>
+                            <circle cx="40" cy="24" r="2" opacity="0.9"/>
+                            <circle cx="24" cy="40" r="2" opacity="1"/>
+                            <circle cx="8" cy="8" r="1" opacity="0.6"/>
+                            <circle cx="40" cy="8" r="1" opacity="0.6"/>
+                            <circle cx="8" cy="40" r="1" opacity="0.6"/>
+                            <circle cx="40" cy="40" r="1" opacity="0.6"/>
+                        </svg>
                     </div>
-                    <a href="https://github.com/yourusername/datapipeline" target="_blank" class="cta-button">View on GitHub</a>
+                    <span>John Doe</span>
                 </div>
+                <div class="nav-links">
+                    <a href="#" onclick="showPage('home')" class="active">Home</a>
+                    <a href="#" onclick="showPage('about')">About</a>
+                    <a href="#" onclick="showPage('projects')">Projects</a>
+                    <a href="#" onclick="showPage('skills')">Skills</a>
+                    <a href="#" onclick="showPage('contact')">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <h3>Machine Learning Data Prep</h3>
-                        <p>Tools for cleaning, augmenting, and preparing datasets for ML models.</p>
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <div class="hero-image">
+                        <img src="images/templatemo-futuristic-girl.jpg" alt="Modern Technology Interaction" />
                     </div>
-                    <a href="https://github.com/yourusername/ml-data-prep" target="_blank" class="cta-button">View on GitHub</a>
-                </div>
-
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <h3>Interactive Python GUI</h3>
-                        <p>Custom Python GUI application for internal utilities and data visualization.</p>
+                    <div class="hero-content">
+                        <h1>Hi! I'm John Doe</h1>
+                        <p>I'm a recent Business Informatics graduate passionate about Python, data engineering, and creating efficient data pipelines. I specialize in automation, data processing, and transforming technology into business value.</p>
+                        <a href="#" class="cta-button" onclick="showPage('projects')">See My Projects</a>
                     </div>
-                    <a href="https://github.com/yourusername/python-gui" target="_blank" class="cta-button">View on GitHub</a>
-                </div>
-
-                <!-- Több projekt hozzáadható ugyanilyen kártya formátumban -->
-            </section>
+                </section>
+            </div>
         </div>
     </div>
-</div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="about-content">
+                    <div class="about-text glass">
+                        <h2>About Me</h2>
+                        <p>I am a motivated and versatile Business Informatics professional with 4 years of internship experience at Bosch. My work focuses on Python-based development, data workflows, automation, and building tools that turn data into actionable insights.</p>
+                        <p>I am passionate about designing efficient data pipelines and delivering technological solutions that provide real business value.</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-card glass">
+                            <div class="stat-number">4+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-number">Python</div>
+                            <div class="stat-label">Advanced</div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-number">SQL</div>
+                            <div class="stat-label">Advanced</div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-number">Projects</div>
+                            <div class="stat-label">Completed</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECTS PAGE -->
+    <div id="projects" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <h1>My Projects</h1>
+                    <p>Some of the projects I've worked on during my internships and personal learning.</p>
+                </section>
+
+                <section class="projects-grid">
+                    <div class="project-card glass">
+                        <h3>Drone Footage Annotation Tool</h3>
+                        <p>Python GUI tool for manual and automated labeling of video frames for ML training. Includes data augmentation scripts and unit tests.</p>
+                        <p><strong>Technologies:</strong> Python, OpenCV, PyQt, Pandas</p>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                    <div class="project-card glass">
+                        <h3>Data Pipeline Automation</h3>
+                        <p>Automated data cleaning and processing workflows for internal Bosch datasets, improving efficiency of ML model preparation.</p>
+                        <p><strong>Technologies:</strong> Python, Pandas, SQL, Bash</p>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                    <div class="project-card glass">
+                        <h3>Internal Software Tools</h3>
+                        <p>Python-based utilities supporting development processes, metadata management, and video processing for internal projects.</p>
+                        <p><strong>Technologies:</strong> Python, GUI development, Docker</p>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- SKILLS PAGE -->
+    <div id="skills" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <h1>Skills & Tools</h1>
+                    <p>Technologies and tools I use to deliver efficient solutions</p>
+                </section>
+
+                <section class="skills-grid">
+                    <div class="skill-card glass">
+                        <h3>Programming</h3>
+                        <p>Python (Advanced), SQL (Advanced), Bash (Basic), C# (Basic), HTML & CSS (Basic)</p>
+                    </div>
+                    <div class="skill-card glass">
+                        <h3>Data Handling</h3>
+                        <p>ETL processes, data cleaning, data transformation, data visualization with Matplotlib, Seaborn, Power BI</p>
+                    </div>
+                    <div class="skill-card glass">
+                        <h3>Tools & Platforms</h3>
+                        <p>Git, Jira, Jupyter, Docker, Azure, Linux</p>
+                    </div>
+                    <div class="skill-card glass">
+                        <h3>Languages</h3>
+                        <p>Hungarian – native, English – Intermediate (B2)</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="contact-grid">
+                    <div class="contact-form glass">
+                        <h2>Get In Touch</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What's this about?">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info glass">
+                        <h2>Contact Information</h2>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div class="contact-item-text">
+                                <h4>Email</h4>
+                                <p>yourname@email.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📞</div>
+                            <div class="contact-item-text">
+                                <h4>Phone</h4>
+                                <p>+36 20 123 4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <div class="container">
+            <footer class="glass">
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <a href="#" onclick="showPage('about')">About Me</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#" onclick="showPage('contact')">Contact</a>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2025 John Doe. All rights reserved. Crafted with modern web technologies.
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+<script src="templatemo-glossy-touch.js"></script>
+</body>
+</html>
