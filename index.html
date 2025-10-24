@@ -1,197 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Business Informatics & Python Developer</title>
-    <link rel="stylesheet" href="templatemo-glossy-touch.css">
-</head>
-<body>
-    <div class="bg-shapes">
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
+<!-- PROJECTS / PORTFOLIO PAGE -->
+<div id="projects" class="page">
+    <div class="container">
+        <div class="content-wrapper">
+            <section class="projects-grid">
+                <h2>My Projects</h2>
+                <p>Here are some of the projects I've worked on, showcasing Python development, data engineering, and automation skills.</p>
 
-    <!-- NAVIGATION HEADER -->
-    <header>
-        <div class="container">
-            <nav class="glass">
-                <div class="logo" onclick="showPage('home')">
-                    <span>John Doe</span>
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>Data Pipeline Automation</h3>
+                        <p>Python scripts for automated ETL workflows and data transformation.</p>
+                    </div>
+                    <a href="https://github.com/yourusername/datapipeline" target="_blank" class="cta-button">View on GitHub</a>
                 </div>
-                <div class="nav-links">
-                    <a href="#" onclick="showPage('home')" class="active">Home</a>
-                    <a href="#" onclick="showPage('about')">About</a>
-                    <a href="#" onclick="showPage('services')">Skills</a>
-                    <a href="#" onclick="showPage('contact')">Contact</a>
+
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>Machine Learning Data Prep</h3>
+                        <p>Tools for cleaning, augmenting, and preparing datasets for ML models.</p>
+                    </div>
+                    <a href="https://github.com/yourusername/ml-data-prep" target="_blank" class="cta-button">View on GitHub</a>
                 </div>
-            </nav>
-        </div>
-    </header>
 
-    <!-- HOME PAGE -->
-    <div id="home" class="page active">
-        <div class="container">
-            <div class="content-wrapper">
-                <section class="hero glass">
-                    <div class="hero-content">
-                        <h1>Hi, I'm John Doe</h1>
-                        <p>I am a recent Business Informatics graduate with hands-on experience in Python development, data processing, and automation. I enjoy building efficient data pipelines and turning technology into business value.</p>
-                        <a href="#" class="cta-button" onclick="showPage('about')">See My Work</a>
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>Interactive Python GUI</h3>
+                        <p>Custom Python GUI application for internal utilities and data visualization.</p>
                     </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
-    <!-- ABOUT PAGE -->
-    <div id="about" class="page">
-        <div class="container">
-            <div class="content-wrapper">
-                <section class="about-content">
-                    <div class="about-text glass">
-                        <h2>About Me</h2>
-                        <p>I graduated from Óbuda University in Business Informatics, with 4 years of internship experience in software development and data workflows. My focus is on Python-based solutions, data engineering, and automation, transforming complex datasets into actionable insights.</p>
-                        <p>My goal is to create efficient and reliable systems that make data accessible and useful for business decision-making.</p>
-                    </div>
-                    <div class="stats">
-                        <div class="stat-card glass">
-                            <div class="stat-number">4+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                        <div class="stat-card glass">
-                            <div class="stat-number">Python</div>
-                            <div class="stat-label">Advanced</div>
-                        </div>
-                        <div class="stat-card glass">
-                            <div class="stat-number">SQL</div>
-                            <div class="stat-label">Advanced</div>
-                        </div>
-                        <div class="stat-card glass">
-                            <div class="stat-number">ETL</div>
-                            <div class="stat-label">Data Pipelines</div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
-    <!-- SKILLS / SERVICES PAGE -->
-    <div id="services" class="page">
-        <div class="container">
-            <div class="content-wrapper">
-                <section class="services-grid">
-                    <div class="service-card glass">
-                        <div class="service-header">
-                            <div class="service-icon">🐍</div>
-                            <h3>Python Development</h3>
-                        </div>
-                        <p>Automation scripts, GUI tools, data processing, and backend utilities using Python.</p>
-                    </div>
-
-                    <div class="service-card glass">
-                        <div class="service-header">
-                            <div class="service-icon">📊</div>
-                            <h3>Data Engineering</h3>
-                        </div>
-                        <p>Data cleaning, transformation, ETL workflows, and visualization using Pandas, SQL, and Matplotlib.</p>
-                    </div>
-
-                    <div class="service-card glass">
-                        <div class="service-header">
-                            <div class="service-icon">☁️</div>
-                            <h3>Cloud & DevOps</h3>
-                        </div>
-                        <p>Containerization with Docker, cloud deployment on Azure, and basic automation for data workflows.</p>
-                    </div>
-
-                    <div class="service-card glass">
-                        <div class="service-header">
-                            <div class="service-icon">💻</div>
-                            <h3>Software Tools</h3>
-                        </div>
-                        <p>Development of custom utilities, GUI applications, and scripts to support productivity and data annotation.</p>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
-    <!-- CONTACT PAGE -->
-    <div id="contact" class="page">
-        <div class="container">
-            <div class="content-wrapper">
-                <section class="contact-grid">
-                    <div class="contact-form glass">
-                        <h2>Get In Touch</h2>
-                        <form>
-                            <div class="form-group">
-                                <label for="name">Full Name</label>
-                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
-                            </div>
-                            <button type="submit" class="cta-button">Send Message</button>
-                        </form>
-                    </div>
-
-                    <div class="contact-info glass">
-                        <h2>Contact Information</h2>
-                        <div class="contact-item">
-                            <div class="contact-item-icon">📧</div>
-                            <div class="contact-item-text">
-                                <h4>Email</h4>
-                                <p>yourname@example.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-item-icon">💻</div>
-                            <div class="contact-item-text">
-                                <h4>GitHub</h4>
-                                <p><a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-item-icon">🔗</div>
-                            <div class="contact-item-text">
-                                <h4>LinkedIn</h4>
-                                <p><a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
-    <!-- FOOTER -->
-    <div id="footer">
-        <div class="container">
-            <footer class="glass">
-                <div class="footer-content">
-                    <div class="footer-links">
-                        <a href="#" onclick="showPage('about')">About Me</a>
-                        <a href="#" onclick="showPage('contact')">Contact</a>
-                    </div>
-                    <div class="copyright">
-                        &copy; 2025 John Doe. All rights reserved.
-                    </div>
+                    <a href="https://github.com/yourusername/python-gui" target="_blank" class="cta-button">View on GitHub</a>
                 </div>
-            </footer>
+
+                <!-- Több projekt hozzáadható ugyanilyen kártya formátumban -->
+            </section>
         </div>
     </div>
-
-<script src="templatemo-glossy-touch.js"></script>
-</body>
-</html>
+</div>
