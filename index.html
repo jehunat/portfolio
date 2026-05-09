@@ -48,15 +48,78 @@
                 <div class="nav-links">
                     <a href="#" onclick="showPage('home')" class="active">Home</a>
                     <a href="#" onclick="showPage('about')">About</a>
-                    <a href="#" onclick="showPage('projects')">Projects</a>
+                    <a href="#" onclick="showPage('tech')">Tech Stacks</a>
                     <a href="#" onclick="showPage('contact')">Contact</a>
                 </div>
             </nav>
         </div>
     </header>
-
-    <!-- HOME PAGE -->
+	
+	<!-- home PAGE -->
     <div id="home" class="page active">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <h1>My Projects</h1>
+                    <p>Production-oriented projects with a focus on SQL, PostgreSQL, and Python-based data systems.</p>
+                </section>
+
+                <section class="features">
+					<div class="feature-card glass">
+                        <div class="feature-icon">🏋️</div>
+                        <h3>Workout Analyser</h3>
+                        <p>A Streamlit-based analytics application focused on structured <b>data ingestion,
+							validation</b>, and time-based analysis of workout performance.
+							Built with Python and pandas, with an emphasis on clean data processing.
+						</p>
+						<br>
+						<a href="https://workout-analyser.streamlit.app" class="cta-button" target="_blank">Live Demo</a>
+                        <a href="https://github.com/jehunat/WorkoutAnalyser" class="cta-button" target="_blank">Source Code</a>
+                    </div>
+					<div class="feature-card glass">
+                        <div class="feature-icon">🖼️</div>
+                        <h3>Image Transformer App</h3>
+                        <p>A lightweight Python desktop utility demonstrating modular design, file handling, and image transformation workflows.</p>
+						<br>
+                        <a href="https://github.com/jehunat/image-editor" class="cta-button" target="_blank">View on GitHub</a>
+                    </div>
+					<div class="feature-card glass">
+                        <div class="feature-icon">🐶</div>
+                        <h3>Animal Shelter Manager</h3>
+                        <p>A database-driven web application built around a relational PostgreSQL schema. Supports structured data management through parameterized SQL queries and a clean service-layer architecture.</p>
+						<br>
+						<a href="https://animal-shelter-manager.streamlit.app/" class="cta-button" target="_blank">Live Demo</a>
+                        <a href="https://github.com/jehunat/AnimalShelterManager" class="cta-button" target="_blank">Source Code</a>
+                    </div>
+					<!--
+                    <div class="feature-card glass">
+                        <div class="feature-icon">💻</div>
+                        <h3>Drone Footage Annotation Tool</h3>
+                        <p>Python GUI tool for manual and automated labeling of video frames for ML training. Includes data augmentation scripts and unit tests.</p>
+                        <a href="#" class="cta-button" target="_blank">View on GitHub</a>
+                    </div>
+
+                    <div class="feature-card glass">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Data Pipeline Automation</h3>
+                        <p>Automated data cleaning and processing workflows for internal Bosch datasets, improving efficiency of ML model preparation.</p>
+                        <a href="#" class="cta-button" target="_blank">View on GitHub</a>
+                    </div>
+
+                    <div class="feature-card glass">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Internal Software Tools</h3>
+                        <p>Python-based utilities supporting development processes, metadata management, and video processing for internal projects.</p>
+                        <a href="#" class="cta-button" target="_blank">View on GitHub</a>
+                    </div>
+					-->
+                </section>
+            </div>
+        </div>
+    </div>
+	
+    <!-- projects PAGE -->
+    <div id="tech" class="page">
         <div class="container">
             <div class="content-wrapper">
                 <section class="hero glass">
@@ -171,65 +234,7 @@
         </div>
     </div>
 
-    <!-- PROJECTS PAGE -->
-    <div id="projects" class="page">
-        <div class="container">
-            <div class="content-wrapper">
-                <section class="hero glass">
-                    <h1>My Projects</h1>
-                    <p>Projects I’ve undertaken as part of my personal development and learning.</p>
-                </section>
-
-                <section class="features">
-					<div class="feature-card glass">
-                        <div class="feature-icon">🏋️</div>
-                        <h3>Workout Analyser</h3>
-                        <p>A Streamlit-based web application that analyzes workout performance from sensor or video data. Built with Python and Pandas.</p>
-						<br>
-						<a href="https://workout-analyser.streamlit.app" class="cta-button" target="_blank">Try Live App</a>
-                        <a href="https://github.com/jehunat/WorkoutAnalyser" class="cta-button" target="_blank">View on GitHub</a>
-                    </div>
-					<div class="feature-card glass">
-                        <div class="feature-icon">🖼️</div>
-                        <h3>Image Transformer App</h3>
-                        <p>A simple Python tkinter image viewer with basic augmentation tools.</p>
-						<br>
-                        <a href="https://github.com/jehunat/image-editor" class="cta-button" target="_blank">View on GitHub</a>
-                    </div>
-					<div class="feature-card glass">
-                        <div class="feature-icon">🐶</div>
-                        <h3>Animal Shelter Manager</h3>
-                        <p>A streamlit-based web app for managing animal shelters. Built with Python and PostgreSQL, it allows adding animals, assigning them to kennels, and managing shelter records through a user-friendly browser interface.</p>
-						<br>
-						<a href="https://animal-shelter-manager.streamlit.app/" class="cta-button" target="_blank">Try Live App</a>
-                        <a href="https://github.com/jehunat/AnimalShelterManager" class="cta-button" target="_blank">View on GitHub</a>
-                    </div>
-					<!--
-                    <div class="feature-card glass">
-                        <div class="feature-icon">💻</div>
-                        <h3>Drone Footage Annotation Tool</h3>
-                        <p>Python GUI tool for manual and automated labeling of video frames for ML training. Includes data augmentation scripts and unit tests.</p>
-                        <a href="#" class="cta-button" target="_blank">View on GitHub</a>
-                    </div>
-
-                    <div class="feature-card glass">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Data Pipeline Automation</h3>
-                        <p>Automated data cleaning and processing workflows for internal Bosch datasets, improving efficiency of ML model preparation.</p>
-                        <a href="#" class="cta-button" target="_blank">View on GitHub</a>
-                    </div>
-
-                    <div class="feature-card glass">
-                        <div class="feature-icon">🚀</div>
-                        <h3>Internal Software Tools</h3>
-                        <p>Python-based utilities supporting development processes, metadata management, and video processing for internal projects.</p>
-                        <a href="#" class="cta-button" target="_blank">View on GitHub</a>
-                    </div>
-					-->
-                </section>
-            </div>
-        </div>
-    </div>
+    
 
     <!-- CONTACT PAGE -->
     <div id="contact" class="page">
